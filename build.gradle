@@ -1,0 +1,13 @@
+subprojects {
+	apply plugin: 'java'
+
+	group = 'com.cleanarchitecture.example'
+	version = '1.0.0'
+
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+
+	repositories {
+		mavenCentral()
+	}
+}

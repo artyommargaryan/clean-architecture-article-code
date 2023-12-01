@@ -1,0 +1,27 @@
+rootProject.name = 'clean-architecture-article-code'
+
+include ':manual-config'
+include ':spring-config'
+include ':domain'
+include ':usecase'
+include ':jug'
+include ':uuid'
+include ':in-memory-db-simple'
+include 'mongo-db'
+include ':encoder-sha256'
+include ':controller'
+
+include ':manual-app'
+include ':spring-app'
+
+project(":encoder-sha256").projectDir = file("adapter/encoder/sha256")
+project(":jug").projectDir = file("adapter/id-generator/jug")
+project(":uuid").projectDir = file("adapter/id-generator/uuid")
+project(":in-memory-db-simple").projectDir = file("adapter/repository/in-memory-simple")
+project(":mongo-db").projectDir = file("adapter/repository/mongo")
+project(":controller").projectDir = file("adapter/controller")
+project(":manual-config").projectDir = file("config/manual")
+project(":spring-config").projectDir = file("config/spring")
+
+project(":manual-app").projectDir = file("application/manual-app")
+project(":spring-app").projectDir = file("application/spring-app")

@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'cleanarchitecture.example.controller'
+
+dependencies {
+	implementation(
+		project(':usecase'),
+		project(':domain'),
+	)
+}

@@ -1,0 +1,23 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath "org.springframework.boot:spring-boot-gradle-plugin:3.2.0"
+	}
+}
+
+apply plugin: 'java-library'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+ext.moduleName = 'cleanarchitecture.example.db.simple'
+
+dependencies {
+	implementation(
+		project(':domain'),
+		project(':usecase'),
+		'org.springframework.boot:spring-boot-starter-web',
+		'org.springframework.boot:spring-boot-starter-data-mongodb'
+	)
+}

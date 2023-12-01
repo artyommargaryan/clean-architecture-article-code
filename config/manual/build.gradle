@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'cleanarchitecture.example.config'
+
+dependencies {
+	implementation(
+		project(':usecase'),
+		project(':domain'),
+		project(':in-memory-db-simple'),
+		project(':jug'),
+		project(':uuid'),
+		project(':encoder-sha256'),
+		project(':controller'),
+	)
+}

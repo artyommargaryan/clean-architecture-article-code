@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'cleanarchitecture.example.main'
+
+dependencies {
+	implementation(
+		project(':manual-config'),
+		project(':domain'),
+		project(':usecase'),
+	)
+}
