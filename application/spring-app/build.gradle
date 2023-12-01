@@ -18,7 +18,7 @@ dependencies {
 		project(':spring-config'),
 		project(':domain'),
 		project(':usecase'),
-		project(':controller'),
+		project(':spring-controller'),
 		project(':mongo-db'),
 		'org.springframework.boot:spring-boot-starter-web',
 		'com.fasterxml.jackson.core:jackson-core:2.16.0',

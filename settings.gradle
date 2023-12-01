@@ -9,7 +9,7 @@ include ':uuid'
 include ':in-memory-db-simple'
 include 'mongo-db'
 include ':encoder-sha256'
-include ':controller'
+include ':spring-controller'
 
 include ':manual-app'
 include ':spring-app'
@@ -19,7 +19,7 @@ project(":jug").projectDir = file("adapter/id-generator/jug")
 project(":uuid").projectDir = file("adapter/id-generator/uuid")
 project(":in-memory-db-simple").projectDir = file("adapter/repository/in-memory-simple")
 project(":mongo-db").projectDir = file("adapter/repository/mongo")
-project(":controller").projectDir = file("adapter/controller")
+project(":spring-controller").projectDir = file("adapter/controller/spring-controller")
 project(":manual-config").projectDir = file("config/manual")
 project(":spring-config").projectDir = file("config/spring")
 

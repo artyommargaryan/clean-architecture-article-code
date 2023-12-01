@@ -1,4 +1,4 @@
-package com.cleanarchitecture.example.controller.model;
+package com.cleanarchitecture.example.spring.controller.model;
 
 import com.cleanarchitecture.example.domain.entity.User;
 

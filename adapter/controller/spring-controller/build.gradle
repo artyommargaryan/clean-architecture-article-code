@@ -11,15 +11,13 @@ apply plugin: 'java-library'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-ext.moduleName = 'cleanarchitecture.example.config'
+ext.moduleName = 'cleanarchitecture.example.controller'
 
 dependencies {
 	implementation(
 		project(':usecase'),
 		project(':domain'),
-		project(':mongo-db'),
-		project(':jug'),
-		project(':uuid'),
-		project(':encoder-sha256'),
+		'org.springframework.boot:spring-boot-starter-web',
+		'com.fasterxml.jackson.core:jackson-core:2.16.0',
 	)
 }

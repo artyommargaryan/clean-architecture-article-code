@@ -1,7 +1,6 @@
 package com.cleanarchitecture.example.spring.config;
 
 import com.cleanarchitecture.config.spring.SpringConfig;
-import com.cleanarchitecture.example.controller.UserController;
 import com.cleanarchitecture.example.usecase.CreateUser;
 import com.cleanarchitecture.example.usecase.FindUser;
 import com.cleanarchitecture.example.usecase.LoginUser;
@@ -39,10 +38,5 @@ public class Config {
 	@Bean
 	public LoginUser loginUser() {
 		return config.loginUser();
-	}
-
-	@Bean
-	public UserController userController() {
-		return new UserController(createUser(), findUser(), loginUser());
 	}
 }
